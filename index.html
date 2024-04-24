@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <!-- css links and files -->
-    <link href="./assets/css/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/global.css">
+    <link href="/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="w-screen h-screen">
+<body class="w-full h-full">
     <div class="flex">
         <!-- Sidebar -->
-        <div class="h-screen">
-            <div class="flex flex-col items-center h-full overflow-hidden text-gray-400 bg-white shadow-md">
+        <div class="h-full z-30">
+            <div class="flex flex-col items-center overflow-hidden text-gray-400 h-full bg-white shadow-md fixed">
                 <a class="flex items-center justify-center mt-3" href="#">
                     <svg class="w-8 h-8" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -115,35 +115,137 @@
             </div>
         </div>
         <!-- Body of the page -->
-        <div class="flex-grow">
+        <div class="flex-grow ml-16">
             <!-- Upper navbar -->
-            <header class="bg-white shadow-sm">
-                <div class=" mx-auto px-4 py-3 flex justify-between z-20 items-center">
+            <header class="bg-white w-full flex shadow-sm fixed z-20">
+                <nav class="px-4 py-3 flex flex-grow justify-between items-center">
                     <button href="#" id="sidebar-toggler" class="text-xl font-bold text-gray-800">
                         <i
                             class="fa-solid fa-bars hover:bg-sky-100 px-3 py-2 rounded-full transition duration-300 hover:opacity-75"></i>
                     </button>
-                    <ul class="flex space-x-5">
+                    <ul class="flex space-x-5 mr-16">
                         <li><a href="#" class="text-gray-800 hover:text-gray-600">Home</a></li>
                         <li><a href="#" class="text-gray-800 hover:text-gray-600">About</a></li>
                         <li><a href="#" class="text-gray-800 hover:text-gray-600">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
             </header>
             <!-- the body of page -->
-            <div class="p-[4%] max-sm:p-[2%] justify-center items-center">
-                <div class="grid md:grid-cols-5 max-sm:grid-cols-2 justify-center items-center gap-[4%]">
-                    <div class="  h-40 bg-sky-300"></div>
-                    <div class="  h-40 bg-sky-300"></div>
-                    <div class="  h-40 bg-sky-300"></div>
-                    <div class="  h-40 bg-sky-300"></div>
-                    <div class="  h-40 bg-sky-300"></div>
+            <div class="mt-24 max-sm:mt-20">
+                <!-- First 5 Cards  -->
+                <div class="px-[3%] my-[3%] max-sm:p-[2%] justify-center ">
+                    <div class="grid md:grid-cols-5 max-sm:grid-cols-2 justify-center items-center gap-[4%]">
+                        <div
+                            class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
+                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <p class="font-poppins text-md max-sm:text-sm mb-1">In Progress</p>
+                            <h5 class="font-poppins font-semibold">500</h5>
+                        </div>
+                        <div
+                            class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
+                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <p class="font-poppins text-md max-sm:text-sm mb-1">On Hold</p>
+                            <h5 class="font-poppins font-semibold">500</h5>
+                        </div>
+                        <div
+                            class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
+                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <p class="font-poppins text-md max-sm:text-sm mb-1">Cancelled</p>
+                            <h5 class="font-poppins font-semibold">500</h5>
+                        </div>
+                        <div
+                            class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
+                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <p class="font-poppins text-md max-sm:text-sm mb-1">Not Started</p>
+                            <h5 class="font-poppins font-semibold">500</h5>
+                        </div>
+                        <div
+                            class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
+                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <p class="font-poppins text-md max-sm:text-sm mb-1">Finished</p>
+                            <h5 class="font-poppins font-semibold">500</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-[3%] max-sm:p-[2%] max-sm:mt-[6%]">
+                    <div class="grid grid-cols-5 gap-x-[2%] gap-y-[4%]">
+                        <div class="col-span-3 bg-white rounded-xl drop-shadow-md py-5 px-7">
+                            <h1 class="font-poppins font-bold text-2xl max-sm:text-lg">Quick Invoices Info</h1>
+                            <!-- Start Quick Invoices Info Charts -->
+                            <div class="max-w-sm w-full bg-white rounded-lg dark:bg-gray-800 p-4 md:p-6">
+                                <div id="column-chart"></div>
+                                <div
+                                    class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">
+                                    <div class="flex justify-between items-center pt-5">
+                                        <!-- Button -->
+                                        <button id="dropdownDefaultButton" data-dropdown-toggle="lastDaysdropdown"
+                                            data-dropdown-placement="bottom"
+                                            class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+                                            type="button">
+                                            Last 7 days
+                                            <svg class="w-2.5 m-2.5 ms-1.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg>
+                                        </button>
+                                        <!-- Dropdown menu -->
+                                        <div id="lastDaysdropdown"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="dropdownDefaultButton">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yesterday</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Today</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last
+                                                        7 days</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last
+                                                        30 days</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last
+                                                        90 days</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Quick Invoices Info Charts -->
+                        </div>
+                        <div class="col-span-2 h-96 bg-white rounded-xl drop-shadow-md py-5 px-7">
+                            <h1 class="font-poppins font-bold text-2xl max-sm:text-lg">Invoices Info</h1>
+                        </div>
+                        <div class="col-span-5 h-96 bg-white rounded-xl drop-shadow-md py-5 px-7">
+                            <h1 class="font-poppins font-bold text-2xl max-sm:text-lg">Tickets Summary</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
 
+    </div>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="/index.js"></script>
     <script>
         const sidebar = document.getElementById('sidebar');
         const toggler = document.getElementById('sidebar-toggler');
@@ -158,5 +260,6 @@
     </script>
     <!-- <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 </body>
+
 
 </html>
