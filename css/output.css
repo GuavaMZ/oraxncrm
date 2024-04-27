@@ -3353,6 +3353,11 @@ input:checked + .toggle-bg {
   line-height: 2.25rem;
 }
 
+.text-\[\#12517F\] {
+  --tw-text-opacity: 1;
+  color: rgb(18 81 127 / var(--tw-text-opacity));
+}
+
 .text-\[\#13DEB9\] {
   --tw-text-opacity: 1;
   color: rgb(19 222 185 / var(--tw-text-opacity));
