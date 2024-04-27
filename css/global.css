@@ -106,6 +106,12 @@ body {
     background-color: #3e8e41;
   }
 
+  th {
+    color: #F8456F;
+  }
+  
+
+
   /* Media Queries */
   
   @media (max-width: 768px) {

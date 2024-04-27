@@ -138,28 +138,28 @@
                         <div
                             class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
                             <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
-                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                                src="/assets/images/icons/wait-hourglass.svg" alt="">
                             <p class="font-poppins text-md max-sm:text-sm mb-1">In Progress</p>
                             <h5 class="font-poppins font-semibold">500</h5>
                         </div>
                         <div
                             class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
-                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
-                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2" src="/assets/images/icons/pause.svg"
+                                alt="">
                             <p class="font-poppins text-md max-sm:text-sm mb-1">On Hold</p>
                             <h5 class="font-poppins font-semibold">500</h5>
                         </div>
                         <div
                             class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
-                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
-                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2" src="/assets/images/icons/cancel.svg"
+                                alt="">
                             <p class="font-poppins text-md max-sm:text-sm mb-1">Cancelled</p>
                             <h5 class="font-poppins font-semibold">500</h5>
                         </div>
                         <div
                             class="flex flex-col h-40 max-sm:h-28 bg-white rounded-xl drop-shadow-md p-5 items-center justify-center hover:drop-shadow-[0_5px_5px_rgba(0,0,255,0.25)] transition ease-in-out hover:-translate-y-1 hover:scale-110">
-                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2"
-                                src="/assets/images/icons/success-green-check-mark-icon.svg" alt="">
+                            <img class="w-14 h-14 max-sm:w-8 max-sm:h-8 mb-2" src="/assets/images/icons/minimize.svg"
+                                alt="">
                             <p class="font-poppins text-md max-sm:text-sm mb-1">Not Started</p>
                             <h5 class="font-poppins font-semibold">500</h5>
                         </div>
@@ -314,8 +314,88 @@
                                 <!-- End Quick Infos Charts -->
                             </div>
                         </div>
-                        <div class="col-span-5 h-96 bg-white rounded-xl drop-shadow-md py-5 px-7">
-                            <h1 class="font-poppins font-bold text-2xl max-sm:text-lg">Tickets Summary</h1>
+                        <div class="col-span-5 bg-white rounded-xl drop-shadow-md py-5 px-7">
+                            <h1 class="font-poppins font-bold text-2xl max-sm:text-lg mb-3">Tickets Summary</h1>
+                            <table class="table-auto w-full px-5 text-center font-poppins">
+                                <thead class="h-20">
+                                    <tr>
+                                        <th>
+                                            Ticket
+                                        </th>
+                                        <th>
+                                            Subject
+                                        </th>
+                                        <th>
+                                            Contact
+                                        </th>
+                                        <th>
+                                            Department
+                                        </th>
+                                        <th>
+                                            Project
+                                        </th>
+                                        <th>
+                                            Priority
+                                        </th>
+                                        <th>
+                                            Status
+                                        </th>
+                                        <th>
+                                            Last Reply
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="space-y-5 h-20">
+                                    <tr class="border-solid border-y-[1px] border-gray-200 h-20">
+                                        <td>#12345</td>
+                                        <td>Random Ticket</td>
+                                        <td>Usertemp</td>
+                                        <td>OraxLite</td>
+                                        <td>Test</td>
+                                        <td><span
+                                                class="py-1 px-3 bg-[#e6fffa] rounded-xl font-semibold text-[#13DEB9]">Low
+                                            </span></td>
+                                        <td>Closed</td>
+                                        <td>22 Apr 2024</td>
+                                    </tr>
+                                    <tr class="border-solid border-y-[1px] border-gray-200 h-20">
+                                        <td>#12345</td>
+                                        <td>Random Ticket</td>
+                                        <td>Usertemp</td>
+                                        <td>OraxLite</td>
+                                        <td>Test</td>
+                                        <td><span
+                                                class="py-1 px-3 bg-[#fbf2ef] rounded-xl font-semibold text-[#FA896B]">High
+                                            </span></td>
+                                        <td>Closed</td>
+                                        <td>22 Apr 2024</td>
+                                    </tr>
+                                    <tr class="border-solid border-y-[1px] border-gray-200 h-20">
+                                        <td>#12345</td>
+                                        <td>Random Ticket</td>
+                                        <td>Usertemp</td>
+                                        <td>OraxLite</td>
+                                        <td>Test</td>
+                                        <td><span
+                                                class="py-1 px-3 bg-[#ebf3fe] rounded-xl font-semibold text-[#539BFF]">Medium
+                                            </span></td>
+                                        <td>Closed</td>
+                                        <td>22 Apr 2024</td>
+                                    </tr>
+                                    <tr class="border-solid border-y-[1px] border-gray-200 h-20">
+                                        <td>#12345</td>
+                                        <td>Random Ticket</td>
+                                        <td>Usertemp</td>
+                                        <td>OraxLite</td>
+                                        <td>Test</td>
+                                        <td><span
+                                                class="py-1 px-3 bg-[#e6fffa] rounded-xl font-semibold text-[#13DEB9]">Low
+                                            </span></td>
+                                        <td>Closed</td>
+                                        <td>22 Apr 2024</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
